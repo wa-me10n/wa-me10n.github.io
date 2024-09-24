@@ -1,245 +1,100 @@
-1. Testing and Validation
+1. Testing and Validation of New Systems or Applications:
 
-Q: Do you conduct extensive testing and validation whenever new systems or applications are introduced before deploying them to the production environment?
+How is the lifecycle of new IT systems and applications managed within the organization, from development to deployment? What specific testing methodologies (e.g., unit testing, integration testing, system testing) are employed before moving systems to the live production environment?
 
-Q: When changes are made to existing systems or applications, do you perform thorough testing and documentation prior to deployment in the live environment?
+What mechanisms are in place to ensure that each stage of testing—especially functional and security testing—is documented comprehensively? Is there an independent audit trail for the test results, and how is this maintained over time?
 
+How does the organization handle changes to existing systems? Are there predefined triggers for regression testing when modifications are introduced, and how are the potential impacts on legacy systems evaluated?
 
-2. Testing Methodology Approval
 
-Q: Have you established a comprehensive methodology for system testing, functional testing, and application security testing?
+2. Security and Resilience of IT Systems:
 
-Q: Has this testing methodology been approved by your Standing Committee on Technology (SCOT)?
+Describe how security controls are embedded into the IT systems of the organization. What formal security testing practices, such as penetration testing or vulnerability assessments, are in place to ensure that critical security controls are functioning effectively before the system is deployed?
 
-Q: Does your testing cover business logic, system functions, security controls, and performance under load and stress conditions?
+How does the organization’s testing framework evaluate the system’s resilience to potential cyber-attacks, and what stress testing is done to simulate attack scenarios such as Distributed Denial of Service (DDoS) or data breaches?
 
-Q: Are dependencies on existing systems properly tested?
+How is the integrity of system functions validated under various load conditions? What specific load or volume tests are conducted to measure system performance, and how do you ensure the system continues to function efficiently under stress?
 
 
-3. Testing Environment
+3. Environment Replication for Testing:
 
-Q: Is testing carried out in a separate environment that replicates the production environment to minimize disruptions?
+In what ways does the testing environment mirror the production environment? Is there a formal process in place to replicate all hardware, software, network configurations, and database states in the testing environment to avoid false positives or negatives during testing?
 
+What safeguards are implemented to ensure that the testing environment does not introduce any disruptions to the production systems, particularly in shared infrastructure? How frequently is the testing environment updated to remain consistent with the live environment?
 
-4. Traceability Matrix
 
-Q: Do you use a traceability matrix to ensure that your test plans cover all intended functionalities of your IT systems and applications?
+4. Traceability Matrix and Test Coverage:
 
+How does the organization use a traceability matrix to ensure that all business and technical requirements are thoroughly tested before deployment? What tools or processes are used to map specific test cases to functional and non-functional requirements?
 
-5. Automated Testing
+How does the organization measure the depth and coverage of test cases? Are automated testing tools employed to increase the breadth of tests, and how do you ensure that critical business logic, system performance, and integration points are comprehensively covered?
 
-Q: Have you adopted automated testing techniques to run test cases automatically?
 
-Q: Do automated tests increase the depth and scope of your testing efforts and improve software quality?
+5. Automated Testing Practices:
 
+What percentage of your testing processes is automated, and how do you determine which test cases are suitable for automation? What framework or tools (e.g., Selenium, JUnit) are used for automating testing processes, and how are they integrated into the continuous development and deployment pipelines?
 
-6. Third-Party Systems
+How is the quality and accuracy of automated tests ensured? Are there fail-safes or manual reviews built into the process to validate the results of automated tests, particularly when dealing with highly sensitive financial transactions?
 
-Q: Do you have policies and procedures in place for the use of third-party systems, applications, or software codes?
 
-Q: Are third-party systems subject to review and testing before integration with your own systems?
+6. Third-Party Systems and Software Code Review:
 
+What due diligence process is followed for third-party systems or software components before they are integrated into your organization's IT infrastructure? How do you ensure that third-party applications are subject to the same rigorous testing standards as internally developed systems?
 
-7. Code Integrity and API Testing
+What policies govern the ongoing monitoring and testing of third-party systems after they have been deployed? How is the organization protected from risks associated with software vulnerabilities, licensing issues, or interoperability failures of third-party components?
 
-Q: Do you ensure that core code components operate as intended without producing unintended consequences?
 
-Q: Does new code deployment avoid impacting existing functionalities?
+7. Code Integrity and API Testing:
 
-Q: Do you perform API testing to ensure seamless interaction between applications without causing disruptions?
+How do you ensure that core code components and any newly introduced code are functioning as expected, without generating unintended consequences? Is there a formal process for reviewing code quality (e.g., through code walkthroughs or peer reviews) before it is pushed into production?
 
+What practices are in place for testing Application Programming Interfaces (APIs) to ensure seamless communication between systems? How do you verify that APIs meet security standards and do not expose the organization to vulnerabilities such as insecure endpoints or data leaks?
 
-8. Regression Testing
 
-Q: Do you perform regression testing after changes to existing IT systems to validate proper functionality?
+8. Handling of Defects and Software Bugs:
 
-Q: After fixing defects found during testing, do you re-run regression tests to ensure no other functionalities are affected?
+How are software bugs or defects identified during testing managed within the organization? Is there a centralized system for tracking and prioritizing defect resolution, and how do you ensure that critical defects are addressed before the system goes live?
 
-Q: Have you implemented automated test cases to perform regression testing more efficiently and comprehensively?
+For critical or high-impact defects, what escalation processes are in place to report these issues to senior management or SCOT? How do you ensure that defects are remediated in a timely manner without introducing additional risks to the production environment?
 
 
-9. Test Coverage Measurement
+9. User Acceptance Testing (UAT):
 
-Q: Have you implemented tools to measure test or code coverage to assess the comprehensiveness of your testing?
+What is the organization’s process for conducting User Acceptance Testing (UAT)? How are end-users involved in validating that the system meets business needs, and what criteria must be met before UAT is signed off?
 
+How are the results of UAT documented and integrated into the overall test report? How does the organization ensure that any issues raised during UAT are tracked, addressed, and resolved before final deployment?
 
-10. Issue Tracking and Remediation
 
-Q: Are all issues identified during testing properly tracked and remediated immediately?
+10. Non-Functional Testing (Volume, Stress, Resilience, etc.):
 
-Q: Are major issues that could adversely impact the organization reported to the SCOT and addressed before production deployment?
+How often does the organization conduct non-functional testing, and what parameters are tested during each session? For example, how do you evaluate the system’s ability to scale under increased volumes or resist stress conditions (e.g., during high trading activity or market volatility)?
 
+What methodologies are used to assess the system’s resilience and recovery capabilities in case of failure? Is there a formal process for testing the effectiveness of disaster recovery (DR) and business continuity planning (BCP) measures?
 
-11. Documentation of Test Results
 
-Q: Do you document the results of all testing, including User Acceptance Testing (UAT), in test reports?
+11. White Box (Structural) Testing:
 
-Q: Are these test reports available for review during system and network audits?
+How does the organization implement white box testing to evaluate internal system architectures, including data flow, control flow, and exception handling? Are there specific tools used to analyze the system at a structural level, and how do you ensure that any potential vulnerabilities are addressed?
 
+What measures are in place to validate the security and effectiveness of error and exception handling mechanisms? How does the system react to unforeseen inputs or unusual operating conditions, and how is this tested in a controlled manner?
 
-12. Non-Functional Testing
 
-Q: Do you periodically conduct non-functional testing such as volume, resilience, scalability, performance, stress, and application security testing?
+12. Governance and Reporting Mechanisms:
 
-Q: Is non-functional testing performed throughout the lifecycle of IT systems and applications, including pre-implementation and post-implementation phases?
+How is the organization’s IT testing framework governed and monitored by senior leadership or relevant committees? What role does the Standing Committee on Technology (SCOT) play in overseeing testing activities, and how are test results communicated to them?
 
+How does the organization ensure that any regulatory changes or recommendations from SEBI (or equivalent bodies) are incorporated into the testing framework? Is there a structured review process to adapt testing methodologies in response to evolving market conditions or technology advancements?
 
-13. White Box Testing
 
-Q: Do you perform white box or structural testing on your IT systems and applications?
+13. Auditing and Compliance:
 
-Q: Does this testing include analysis of data flow, control flow, information flow, coding practices, and exception/error handling within the system?
+How is the IT testing framework audited to ensure compliance with SEBI’s directives and industry best practices? How frequently are internal and external audits conducted, and what specific areas do auditors focus on when assessing the adequacy of testing practices?
 
+How does the organization address any audit findings or recommendations related to the IT systems? Is there a formal process to implement corrective actions, and how are these actions tracked to completion?
 
-14. Comprehensive Testing Framework
 
-Q: Have you established a comprehensive testing framework to manage your IT systems and applications throughout their lifecycle?
+14. Continuous Improvement and Learning:
 
-Q: Does this framework assist you in performing thorough risk assessments before deploying IT systems in the production environment?
+What feedback loops or post-mortem reviews are conducted after each major testing cycle or deployment? How does the organization use these learnings to improve future testing practices and ensure the continual refinement of the IT systems?
 
-
-15. Continuous Improvement
-
-Q: Do you regularly review and update your testing methodologies to incorporate industry best practices and technological advancements?
-
-
---------------------------------------------------------------------------------------
-
-16. Risk Assessment Before Deployment
-
-Q: Do you perform thorough risk assessments before deploying new IT systems or applications into the production environment?
-
-Q: Does your testing framework help identify and mitigate potential risks associated with new deployments?
-
-Q: Are risk assessment findings documented and reviewed by relevant stakeholders before deployment?
-
-
-17. Business Continuity Planning (BCP) Testing
-
-Q: Do you periodically conduct Business Continuity Planning (BCP) testing for your IT systems and applications?
-
-Q: Have you tested your systems' ability to recover from disruptions as part of your BCP?
-
-Q: Are the results of BCP testing used to improve your disaster recovery plans?
-
-
-18. Negative/Destructive Testing
-
-Q: Do you perform negative or destructive testing to assess how your systems handle invalid or unexpected inputs?
-
-Q: Does negative testing help you identify vulnerabilities or weaknesses in your systems?
-
-Q: How do you incorporate the findings from negative testing into system improvements?
-
-
-19. Lifecycle Management
-
-Q: Is your testing framework designed to manage IT systems and applications throughout their entire lifecycle?
-
-Q: Do you have procedures for continuous monitoring and testing after systems are deployed?
-
-Q: How do you ensure that testing remains consistent during pre-implementation, post-implementation, and after any changes?
-
-
-20. Exception and Error Handling
-
-Q: Does your white box testing include thorough analysis of exception and error handling within your systems?
-
-Q: How do you verify that your systems handle errors gracefully without compromising functionality or security?
-
-Q: Are there mechanisms in place to log and monitor exceptions for ongoing system improvement?
-
-
-21. Compliance with Regulatory Requirements
-
-Q: Does your testing framework ensure compliance with all relevant regulatory requirements set by authorities like SEBI?
-
-Q: Are compliance checks integrated into your testing procedures?
-
-Q: How do you stay updated with regulatory changes that may impact your IT systems and testing processes?
-
-
-22. Coordination with Technology Advisory Committee (TAC)
-
-Q: Do you coordinate with the Technology Advisory Committee (TAC) for recommendations on your testing framework?
-
-Q: How are TAC recommendations incorporated into your testing practices?
-
-Q: Is there a process for reviewing and updating your testing framework based on TAC feedback?
-
-
-23. Security Controls Testing
-
-Q: Do you specifically test security controls to protect against unauthorized access or data breaches?
-
-Q: Are vulnerability assessments and penetration tests part of your security testing?
-
-Q: How often do you update your security testing procedures to address new threats?
-
-
-24. Performance Under Load and Stress Conditions
-
-Q: Have you tested your systems' performance under various load and stress conditions?
-
-Q: Do stress tests simulate real-world peak usage scenarios?
-
-Q: How do you use performance testing results to optimize system scalability and reliability?
-
-
-25. Dependency Testing
-
-Q: When your system depends on existing systems, do you thoroughly test these dependencies?
-
-Q: How do you ensure that integration points with other systems function correctly?
-
-Q: Are there contingency plans if dependencies fail or underperform?
-
-
-26. Approval from Standing Committee on Technology (SCOT)
-
-Q: Do you obtain approval from your Standing Committee on Technology (SCOT) for your testing methodologies?
-
-Q: Is there a formal process for SCOT to review and endorse your testing strategies?
-
-Q: How do you address any concerns or recommendations raised by SCOT?
-
-
-27. Use of Testing Metrics
-
-Q: Do you utilize testing metrics to evaluate the effectiveness of your testing processes?
-
-Q: Are metrics like defect density, test coverage, and mean time to detect/resolution tracked?
-
-Q: How do these metrics inform improvements in your testing framework?
-
-
-28. Training and Skill Development
-
-Q: Do your testing teams receive regular training on the latest testing tools and methodologies?
-
-Q: Are team members certified or qualified in specialized testing areas relevant to your systems?
-
-Q: How do you ensure that your testing team stays updated with industry best practices?
-
-
-29. Documentation and Audit Trails
-
-Q: Is all testing documentation maintained in an organized and accessible manner?
-
-Q: Do you have audit trails for all changes and tests conducted on your systems?
-
-Q: How do you ensure that documentation meets the standards required for system and network audits?
-
-
-30. Feedback Loop for Continuous Improvement
-
-Q: Do you have a feedback mechanism to learn from past testing cycles and incidents?
-
-Q: How is feedback used to enhance future testing plans and system development?
-
-Q: Are stakeholders involved in reviewing testing outcomes for continuous improvement?
-
-
-
-
-
+How does the organization ensure that its testing practices evolve in line with emerging technologies (e.g., cloud computing, blockchain) and market requirements? What continuous learning or upskilling programs are in place for the IT teams to stay updated on best practices in testing and security?
